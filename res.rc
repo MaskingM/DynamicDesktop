@@ -1,0 +1,26 @@
+#include <windows.h>
+#include "res.h"
+
+STRINGTABLE DISCARDABLE
+BEGIN
+	IDS_SELF_STR_PROG,					"Win32MaskDesktop"
+	IDS_SELF_STR_NAME,					"动态壁纸"
+	IDS_SELF_STR_TITLE,					"动态壁纸"
+	IDS_SELF_ERR_CLASS,					"窗口类注册失败"
+	IDS_SELF_ERR_WND,					"窗口创建失败"
+	IDS_SELF_NID_TITLE,					"动态壁纸"
+	IDS_SELF_NID_MSG,					"托盘基本信息"
+	IDS_SELF_ERR_FILEFORMAT,			"文件格式错误"
+	IDS_SELF_ERR_FILETOOLARGE,			"文件超出范围"
+	IDS_SELF_ERR_MEMERY,				"内存分配异常"
+	IDS_SELF_ERR_FILEREAD,				"文件读取错误"
+	IDS_SELF_ERR_FILEWRITE,				"文件写入错误"
+	IDS_SELF_ERR_FILEINVALID,			"文件句柄无效"
+	IDS_SELF_NID_TIPS,					"动态桌面\r\n作者:Mask\r\n邮箱:809907030@qq.com"
+END
+
+IDI_SELF_ICON_MAIN ICON DISCARDABLE "icon.ico"
+1 24 app.exe.manifest
+
+BASEVSHADER TEXT DISCARDABLE "shaderVextex.vs"
+BASEFSHADER TEXT DISCARDABLE "shaderFrag.fs"
